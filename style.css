@@ -1,0 +1,469 @@
+/* reset code & common code start here */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	outline: 0;
+	font-weight: 500;
+}
+html{
+	background-color: #fafafa;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	/* font-family: 'Italianno', cursive; */
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	width: 120rem;
+	max-width: 100%;
+	margin: auto;
+	box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* reset code & common code end here */
+
+/* header start here */
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: black;
+		color: #fafafa;
+		padding: 2rem 1rem;
+		position: sticky;
+		z-index: 10;
+		top: 0;
+		min-height: 5vh;
+	}
+	.logo-figure{
+		border: 1px solid white;
+		border-radius: 15px;
+	}
+	.logo{
+		font-size: 3rem;
+		padding: 0.5rem;
+	}
+	#menu-icon{
+		display: none;
+	}
+	nav li{
+		display: inline-block;
+		margin-right: 2rem;
+		padding: 1rem;
+		transition: all 0.4s;
+		
+	}
+	
+	nav li:last-child{
+		margin-right: 0;
+	}
+	nav li:hover{
+		background-color: orange;
+		border-radius: 0.6rem;
+		overflow: hidden;
+		
+	}
+	.nav-link{
+		color: #fafafa;
+		font-size: 1.8rem;
+		
+	}
+/* header end here */
+
+/* banner section start here */
+	#blog-banner-section{
+		padding: 2rem 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 5vh;
+		
+	}
+	#blog-banner-section article{
+		width: 50%;
+		margin: 1rem;
+		
+	}
+	#blog-banner-section aside{
+		width: 50%;
+		margin: 1rem;
+		
+	}
+	.banner-heading{
+		display: inline-block;
+		padding: 1rem;
+		font-size: 4rem;
+		margin-bottom: 0.1rem;
+		background-color: gainsboro;
+		border-radius: 10rem;
+		
+	}
+	
+	.banner-description{
+		font-size: 1.5rem;
+		text-align: justify;
+	}
+
+	.banner-img{
+		width: 100%;
+		height: 50rem;
+		border: 0.3rem solid;
+		border-radius:1rem ;
+	}
+/* banner section start end */
+/* about section start here */
+	.about-section{
+		padding: 5rem 2rem;
+		background-color: #9c9696;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		
+	}
+	.about-heading{
+		color: #fafafa;
+		font-size: 8rem;
+		font-family: 'Italianno', cursive;
+		text-align: center;
+		text-decoration: underline;
+		
+	}
+	.card-box{
+		display: flex;
+		align-items: center;
+	}
+	.card{
+		flex: 1;
+		border-radius: 0.6rem;
+		background-color: #fafafa;
+		padding: 3rem 1rem;
+		margin: 2rem;
+		transition: transform 0.3s;
+	}
+	.card:hover{
+		transform: scale(1.1);
+	}
+	.card-header{
+		font-size: 3rem;
+		font-weight: 400;
+		margin-bottom:2rem;
+		text-align: center;
+		
+	}
+	.card-description{
+		font-size: 1.6rem;
+		text-align: justify;
+		padding: 0.4rem 0;
+		margin-bottom: 5rem;
+		font-weight: 400;
+	}
+	.card-btn{
+		background-color: orange;
+		padding: 0.8rem 5rem;
+		border:0.5px solid gray;
+		border-radius: 2rem;
+		font-size: 2rem;
+		color: #fafafa;
+		display: block;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+/* about section end here */
+
+/* archive section start here */
+.archive-section{
+	padding: 5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.archive-header{
+		color: #000000;
+		font-size: 8rem;
+		font-family: 'Italianno', cursive;
+		text-align: center;
+}
+
+.img-box{
+	padding: 2rem;
+	border-top: 0.1rem solid black;
+	border-bottom: 0.1rem solid;
+}
+.archive-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.archives-img-list{
+	margin: 2rem;
+	
+}
+.archive-image{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.6rem;
+	transition: transform 0.3s;
+}
+.archive-image:hover{
+	transform: scale(1.1);
+}
+/* archive section end here */
+/* blog section start here  */
+	.blog-section{
+		padding: 5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.blog-heading{
+		color: #000000;
+		font-size: 8rem;
+		font-family: 'Italianno', cursive;
+		text-align: center;
+	}
+	.blog-post{
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem 0;
+		border-radius: 1rem;
+		overflow: hidden;
+		box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+		transition: transform 0.3s;
+	}
+	.blog-post:hover{
+		transform: scale(1.1);
+	}
+	.blog-post-aside{
+		flex: 1;
+	}
+	.blog-post-article{
+		flex: 2;
+		/* display: flex;
+		flex-direction: column;
+		justify-content: space-evenly; */
+		padding: 1rem;
+		margin-left: 2rem;
+	}
+	.blog-post-header{
+		font-size: 2.5rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+	.blogpost-subheader{
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 1rem ;
+	}
+	.blog-description{
+		font-size: 1.6rem;
+    	font-weight: 300;
+    	text-align: justify;
+		margin-bottom: 1rem;
+
+	}
+	.blog-btn{
+		background-color: orange;
+   	 	padding: 0.8rem 3rem;
+    	border: 0.5px solid gray;
+    	border-radius: 1rem;
+    	font-size: 2rem;
+    	color: #4C4C4C;
+    	cursor: pointer;
+	}
+	.blog-img{
+		height:20rem;
+		width: 100%;
+	}
+/* blog section end here */
+/* contact form start here */
+	.contact-section{
+		padding: 5rem 1rem;
+		background-color: #4C4C4C;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.contact-header{
+		color: #ffff;
+		font-size: 8rem;
+		font-family: 'Italianno', cursive;
+		text-align: center;
+		margin-bottom: 5rem;
+	}
+	.contact-form{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		color: #fff;
+		padding: 1rem;
+		background-color: #1615154d;
+		border-radius: 2rem;
+		
+	}
+.form-control{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+.form-control label{
+	margin-right: 5rem;
+	font-size: 2rem;
+	font-weight: 400;
+	flex: 1;
+}
+.form-control input{
+	padding: 1rem;
+	border-radius: 2rem;
+	flex: 2;
+}
+.form-control textarea{
+	flex: 2;
+	border-radius: 2rem;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+ .submit {
+		margin-left: auto;
+		background-color: orange;
+		padding: 0.8rem 3rem;
+		border-radius: 2rem;
+		font-size: 2rem;
+		color: #fafafa;
+		cursor: pointer;
+		transition: transform 0.3s;
+}
+.submit:hover {
+	transform: scale(1.1);
+}
+/* contact form end here */
+/* footer section start here */
+.footer-section{
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #000000;
+}
+.footer-section span{
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+
+.icon-list{
+	display: inline-block;
+	font-size: 2.2rem;
+	margin-right:2rem;
+	cursor: pointer;
+	transition: transform 0.3s;
+	
+}
+.icon-list a{
+	color: #fff;
+}
+
+.icon-list:last-child{
+	margin-right:0 ;
+}
+.icon-list:hover{
+	transform: scale(1.4);
+}
+/* footer section end here */
+
+
+/* responsive start here */
+@media (max-width:992px) {
+	.blog-post{
+		display: block;
+		margin: 2rem;
+	}
+}
+@media (max-width:768PX) {
+	#blog-banner-section{
+		flex-direction: column;
+	}
+	#blog-banner-section article{
+		width: 100%;
+		padding: 1rem;
+		
+	}
+	#blog-banner-section aside{
+		width: 100%;
+		padding: 1rem;
+		
+	}
+	.banner-heading{
+		padding:1rem 0rem;
+		font-size: 4rem;
+		margin-bottom: 0.1rem;
+		display: block;
+		text-align: center;
+		background-color:#FAFAFA ;
+		border-radius: 0;
+		
+	}
+	.banner-description{
+		font-size: 1.8rem;
+	}
+	.card-box{
+		display: block;
+		
+	}
+	.card{
+		margin:2rem; 
+	}
+
+
+}
+@media (max-width:600px) {
+	html{
+		font-size: 49%;
+	}
+	header{
+		flex-direction: column;
+		
+	}
+	.logo{
+		font-size: 5rem;
+	}
+	#menu-icon{
+		display: block;
+		font-size: 5rem;
+		margin-top: 3rem;
+		cursor: pointer;
+	}
+	.hidden{
+		display: none;
+	}
+	nav li{
+		display: block;
+		margin-right: 0;
+		text-align: center;
+		margin: 1rem 0;
+	}
+	.card-description{
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.archive-container{
+		flex-wrap: wrap;
+
+	}
+	.footer-section span{
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+}
+@media (max-width:400px) {
+
+}
+
+
+/* responsive end here */
