@@ -61,7 +61,6 @@ body{
 	nav li:hover{
 		background-color: orange;
 		border-radius: 0.6rem;
-		overflow: hidden;
 		
 	}
 	.nav-link{
