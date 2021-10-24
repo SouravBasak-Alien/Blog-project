@@ -461,7 +461,9 @@ body{
 	}
 }
 @media (max-width:400px) {
-
+	.contact-form {
+		max-width: 100%;
+	}
 }
 
 
